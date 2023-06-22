@@ -1,0 +1,3 @@
+[submodule "haskell-language-server"]
+	path = haskell-language-server
+	url = git@github.com:haskell/haskell-language-server.git
