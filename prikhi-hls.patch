@@ -1,8 +1,8 @@
 diff --git a/hls-plugin-api/src/Ide/Types.hs b/hls-plugin-api/src/Ide/Types.hs
-index c32b7173..0ff057b1 100644
+index b7aaa6e2..acf8d1bb 100644
 --- a/hls-plugin-api/src/Ide/Types.hs
 +++ b/hls-plugin-api/src/Ide/Types.hs
-@@ -179,7 +179,7 @@ instance Default Config where
+@@ -191,7 +191,7 @@ instance Default Config where
    def = Config
      { checkParents                = CheckOnSave
      , checkProject                = True
@@ -25,7 +25,7 @@ index e220eaa9..cbe55341 100644
      , ghc-boot-th
      , ghcide          == 2.1.0.0
 diff --git a/stack.yaml b/stack.yaml
-index c28042b4..1547020b 100644
+index c28042b4..bcf2571c 100644
 --- a/stack.yaml
 +++ b/stack.yaml
 @@ -1,4 +1,4 @@
