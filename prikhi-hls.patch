@@ -61,7 +61,7 @@ index c28042b4..bcf2571c 100644
  - hie-bios-0.12.0
  - row-types-1.0.1.2
 +- hlint-3.6
-+- fourmolu-0.13.0.0
++- fourmolu-0.13.1.0
 +# fourmolu
 +- ghc-lib-parser-9.6.2.20230523
 +- Cabal-syntax-3.10.1.0
