@@ -11,4 +11,4 @@ echo "Applying custom patch..."
 git apply ../prikhi-hls.patch
 
 echo "Building & installing to ~/.local/bin..."
-stack install haskell-language-server && mv -f ~/.local/bin/haskell-language-server ~/.local/bin/haskell-language-server-9.4.8
+stack install haskell-language-server && mv -f ~/.local/bin/haskell-language-server ~/.local/bin/haskell-language-server-9.6.3

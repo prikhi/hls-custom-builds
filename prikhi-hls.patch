@@ -1,29 +1,38 @@
 diff --git a/stack.yaml b/stack.yaml
-index 504971dc..4a70ad6b 100644
+index 63101b21..ad886973 100644
 --- a/stack.yaml
 +++ b/stack.yaml
 @@ -1,4 +1,4 @@
 -resolver: nightly-2023-07-10 # ghc-9.6.2
-+resolver: lts-21.22
++resolver: lts-22.6
  
  packages:
    - .
-@@ -55,6 +55,14 @@ extra-deps:
- - lsp-2.3.0.0
- - lsp-test-0.16.0.1
- - lsp-types-2.1.0.0
-+- hlint-3.6.1
-+- fourmolu-0.14.0.0
-+# fourmolu
-+- ormolu-0.7.2.0
-+- ghc-lib-parser-9.6.2.20230523
-+- Cabal-3.10.1.0
-+# hlint
-+- ghc-lib-parser-ex-9.6.0.0
+@@ -34,7 +34,7 @@ packages:
+   - ./plugins/hls-retrie-plugin
+   - ./plugins/hls-splice-plugin
+   - ./plugins/hls-stan-plugin
+-  - ./plugins/hls-stylish-haskell-plugin
++  #- ./plugins/hls-stylish-haskell-plugin
+   - ./plugins/hls-semantic-tokens-plugin
  
- # stan dependencies not found in the stackage snapshot
- - stan-0.1.0.2
-@@ -79,6 +87,8 @@ configure-options:
+ ghc-options:
+@@ -57,6 +57,14 @@ extra-deps:
+ - monad-dijkstra-0.1.1.4
+ - hw-prim-0.6.3.2
+ - optparse-applicative-0.17.1.0
++- github: ndmitchell/hlint # hlint-3.8 (not yet uploaded)
++  commit: 14162e89c2fbf5c42a451e4e2368a8b11625f5cb
++- fourmolu-0.14.1.0
++# fourmolu
++- ormolu-0.7.3.0
++- ghc-lib-parser-9.8.1.20231121
++# hlint
++- ghc-lib-parser-ex-9.8.0.0
+ 
+ # stan and friends
+ - stan-0.1.2.0
+@@ -81,6 +89,8 @@ configure-options:
  flags:
    haskell-language-server:
      pedantic: true
