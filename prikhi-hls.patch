@@ -1,5 +1,5 @@
 diff --git a/stack.yaml b/stack.yaml
-index 63101b21..ad886973 100644
+index 63101b21..9f33ca94 100644
 --- a/stack.yaml
 +++ b/stack.yaml
 @@ -1,4 +1,4 @@
@@ -17,12 +17,11 @@ index 63101b21..ad886973 100644
    - ./plugins/hls-semantic-tokens-plugin
  
  ghc-options:
-@@ -57,6 +57,14 @@ extra-deps:
+@@ -57,6 +57,13 @@ extra-deps:
  - monad-dijkstra-0.1.1.4
  - hw-prim-0.6.3.2
  - optparse-applicative-0.17.1.0
-+- github: ndmitchell/hlint # hlint-3.8 (not yet uploaded)
-+  commit: 14162e89c2fbf5c42a451e4e2368a8b11625f5cb
++- hlint-3.8
 +- fourmolu-0.14.1.0
 +# fourmolu
 +- ormolu-0.7.3.0
@@ -32,7 +31,7 @@ index 63101b21..ad886973 100644
  
  # stan and friends
  - stan-0.1.2.0
-@@ -81,6 +89,8 @@ configure-options:
+@@ -81,6 +88,8 @@ configure-options:
  flags:
    haskell-language-server:
      pedantic: true
