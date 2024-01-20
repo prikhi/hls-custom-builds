@@ -2,6 +2,8 @@
 
 set -e
 
+GHC_VERSION='9.6.4'
+
 echo "Ensuring submodule is clean..."
 git submodule update --init --checkout --force
 
@@ -14,7 +16,7 @@ echo "Applying patch..."
 git apply ../prikhi-hls.patch
 
 echo "Building & installing to ~/.local/bin/..."
-stack install haskell-language-server && mv -f ~/.local/bin/haskell-language-server ~/.local/bin/haskell-language-server-9.6.3
+stack install haskell-language-server && mv -f ~/.local/bin/haskell-language-server "${HOME}/.local/bin/haskell-language-server-${GHC_VERSION}"
 
 echo "Saving patch..."
 git diff > ../prikhi-hls.patch
