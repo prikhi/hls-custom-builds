@@ -1,37 +1,14 @@
 diff --git a/stack.yaml b/stack.yaml
-index 63101b21..9f33ca94 100644
+index ac6f5df4..67e8340d 100644
 --- a/stack.yaml
 +++ b/stack.yaml
 @@ -1,4 +1,4 @@
 -resolver: nightly-2023-07-10 # ghc-9.6.2
-+resolver: lts-22.7
++resolver: lts-22.9
  
  packages:
    - .
-@@ -34,7 +34,7 @@ packages:
-   - ./plugins/hls-retrie-plugin
-   - ./plugins/hls-splice-plugin
-   - ./plugins/hls-stan-plugin
--  - ./plugins/hls-stylish-haskell-plugin
-+  #- ./plugins/hls-stylish-haskell-plugin
-   - ./plugins/hls-semantic-tokens-plugin
- 
- ghc-options:
-@@ -57,6 +57,13 @@ extra-deps:
- - monad-dijkstra-0.1.1.4
- - hw-prim-0.6.3.2
- - optparse-applicative-0.17.1.0
-+- hlint-3.8
-+- fourmolu-0.14.1.0
-+# fourmolu
-+- ormolu-0.7.3.0
-+- ghc-lib-parser-9.8.1.20231121
-+# hlint
-+- ghc-lib-parser-ex-9.8.0.0
- 
- # stan and friends
- - stan-0.1.2.0
-@@ -81,6 +88,8 @@ configure-options:
+@@ -54,6 +54,8 @@ configure-options:
  flags:
    haskell-language-server:
      pedantic: true
