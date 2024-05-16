@@ -1,10 +1,10 @@
 diff --git a/stack.yaml b/stack.yaml
-index 87faaf66..98ad49d4 100644
+index 87faaf66..a2590e72 100644
 --- a/stack.yaml
 +++ b/stack.yaml
 @@ -1,4 +1,4 @@
 -resolver: lts-22.9 # ghc-9.6.4
-+resolver: lts-22.19
++resolver: lts-22.22
  
  packages:
    - .
