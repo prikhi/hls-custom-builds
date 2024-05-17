@@ -2,7 +2,7 @@
 
 FOURMOLU_VERSION='0.15.0.0'
 HLINT_VERSION='3.8'
-GHC_VERSION='9.6.4'
+GHC_VERSION='9.6.5'
 
 install_pkg() {
     PKG="${1}"
