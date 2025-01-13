@@ -1,33 +1,14 @@
 diff --git a/stack.yaml b/stack.yaml
-index 8df73f64..82bb7e87 100644
+index 8df29e1b..ebd727c5 100644
 --- a/stack.yaml
 +++ b/stack.yaml
 @@ -1,4 +1,4 @@
 -resolver: nightly-2024-06-12 # ghc-9.8.2
-+resolver: lts-22.29
++resolver: lts-23.3
  
  packages:
    - .
-@@ -39,6 +39,18 @@ extra-deps:
-   - trial-optparse-applicative-0.0.0.0
-   - trial-tomland-0.0.0.0
- 
-+  - Diff-0.5
-+  - tomland-1.3.3.3
-+  - validation-selective-0.2.0.0
-+
-+  # fourmolu
-+  - fourmolu-0.15.0.0
-+  - ormolu-0.7.4.0
-+  - ghc-lib-parser-9.8.1.20231009
-+  - ghc-lib-parser-ex-9.8.0.0
-+  # hlint
-+  - hlint-3.8
-+
- configure-options:
-   ghcide:
-     - --disable-library-for-ghci
-@@ -48,6 +60,8 @@ configure-options:
+@@ -50,6 +50,8 @@ configure-options:
  flags:
    haskell-language-server:
      pedantic: true
