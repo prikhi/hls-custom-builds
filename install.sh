@@ -2,7 +2,7 @@
 
 set -e
 
-GHC_VERSION='9.8.4'
+GHC_VERSION='9.10.2'
 
 echo "Ensuring we are on clean proper commit..."
 git submodule update --init --checkout --force

@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 
-FOURMOLU_VERSION='0.15.0.0'
-HLINT_VERSION='3.8'
-GHC_VERSION='9.8.4'
+FOURMOLU_VERSION='0.18.0.0'
+HLINT_VERSION='3.10'
+GHC_VERSION='9.10.2'
 
 install_pkg() {
     PKG="${1}"
