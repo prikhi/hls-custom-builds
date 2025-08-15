@@ -32,7 +32,7 @@ index db1696d9..334d6780 100644
  
  import           Control.Lens                     ((^.))
 diff --git a/stack.yaml b/stack.yaml
-index 745ceff3..ca03c568 100644
+index 43cb239b..4f547bd2 100644
 --- a/stack.yaml
 +++ b/stack.yaml
 @@ -1,4 +1,4 @@
